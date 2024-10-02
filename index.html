@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Page</title>
+    <style>
+        body {
+
+            padding-top: 0px;
+            background: linear-gradient(25deg, #670327, pink);
+            display: flex;
+            justify-content: center;
+            font-family: 'Garamond', serif;
+      
+        }
+         
+          .info p {
+            color: black;
+
+        }
+          .info option
+          .info input {
+            background-color: #c6e3de;
+        }
+          .info {
+            background-color: pink;
+            width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        #header {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            margin: 0;
+            border: 0;
+        }
+        .details {
+            margin: 20px 0;
+            color: #A5B68D;
+        }
+        label {
+            display: #d9d7c2;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+            border-radius: 10px; 
+        }
+        select {
+            color: burlywood;
+            background-color: white;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+            border-radius: 10px; 
+        }
+
+        
+        .details input[type="date"]{
+            color: gray;
+        }
+
+        #buttoninfo{
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 10px 230px;
+        
+        }
+        button {
+            font-family: Arial;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+        #submit{
+            background-color: indianred;
+        }
+        #cancel{
+            background-color: indianred;
+        }
+        #submit:hover{
+            background-color: forestgreen;
+        }
+        #cancel:hover {
+            background-color: red;
+        }
+        .details label{
+            color: #503a42;
+        }
+        .details input{
+            background-color: white;
+        }
+        .details option{
+
+            color: black;
+            background-color: rosybrown;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          
+
+    </style>
+</head>
+<body>
+<div class="info">
+    <div id="header">  
+    </div>
+    <img src="logo.png" alt="Centered Image" class="center" width="80" height="80" style="border-radius:25%; padding: 0px;">
+    <p style="font-family: 'Copperplate', fantasy; font-weight: bold; font-size: 25px; text-align: center; color: #524A4E; border:2px solid Tomato;">Registration Form</p>
+    <form>
+        <div>
+            <small><strong><h2 style="font-family: 'Courier', monospace; color: #900c3f;">Personal Information</h2></strong></small>
+        </div>
+        
+        <div class="details">
+            <label>Enter First Name</label>
+            <input type="text" placeholder="First Name" required>
+        </div>
+        <div class="details">
+            <label>Enter Middle Name</label>
+            <input type="text" placeholder="Middle Name" required>
+        </div>
+        <div class="details">
+            <label>Enter Last Name</label>
+            <input type="text" placeholder="Last Name" required>
+        </div>
+        <div class="details">
+            <label>Suffix</label>
+            <select required>
+            <option value="">Select Suffix</option>
+            <option value="None">None</option>
+            <option value="Jr.">Jr.</option>
+            <option value="Sr.">Sr.</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+    </select>
+        </div>
+         <div class="details">
+            <label>Enter Birthdate</label>
+            <input type="date" required>
+        </div>
+        <div class="details">
+            <label>Email Address</label>
+            <input type="email" placeholder="Email" required>
+        </div>
+
+        <div class="details">
+            <label>Enter Username</label>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="details">
+            <label>Enter Password</label>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="details">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" required>
+        </div>
+        <div id="buttoninfo">
+        <button style="font-family: Arial; "type="submit" id="submit" >Submit</button>
+        <button type="reset" id="cancel" >Cancel</button>
+    </div>
